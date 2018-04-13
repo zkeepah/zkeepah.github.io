@@ -67,12 +67,12 @@ function weightConverter(valNum) {
 <p>Type your number of ones to convert to number of nine-thousands:</p>
 <p>
   <label>Number of ones:</label>
-  <input id="inputones" type="number" placeholder="0" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  <input id="inputones" type="number" placeholder="0" oninput="weightConverter(this.value)" onchange="numberconverter(this.value)">
 </p>
 <p>Number of nine-thousands: <span id="outputnines"></span></p>
 
 <script>
-function weightConverter(valNum) {
+function numberconverter(valNum) {
   document.getElementById("outputnines").innerHTML=valNum/9000;
 }
 </script>	
