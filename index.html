@@ -69,11 +69,11 @@ function weightConverter(valNum) {
   <label>Number of ones:</label>
   <input id="inputPounds" type="number" placeholder="0" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
 </p>
-<p>Number of nine-thousands: <span id="outputKilograms"></span></p>
+<p>Number of nine-thousands: <span id="outputnines"></span></p>
 
 <script>
 function weightConverter(valNum) {
-  document.getElementById("outputKilograms").innerHTML=valNum/9000;
+  document.getElementById("outputnines").innerHTML=valNum/9000;
 }
 </script>	
 
